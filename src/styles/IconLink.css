@@ -1,8 +1,8 @@
 .iconLinkContainer {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  text-decoration: none;
   color: #8797a1;
+  display: flex;
   font-size: 3em;
+  justify-content: center;
+  text-decoration: none;
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTabs } from './Tabs';
 
+import '../styles/Tab.css';
+
 export interface ITabProps {
   label: string;
 }
@@ -11,8 +13,11 @@ export interface ITabProps {
 export const Tab: React.FC<ITabProps> = (props) => {
   const { setActiveTab } = useTabs();
   return (
-    <div className="tab">
-      <button onClick={() => setActiveTab(props.label)}>
+    <div>
+      <button
+        className="TabButton"
+        onClick={() => setActiveTab(props.label)}
+      >
         {props.children}
       </button>
     </div>

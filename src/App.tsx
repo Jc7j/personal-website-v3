@@ -8,17 +8,11 @@ const App = () => {
   return (
     <div className="App">
       <div className="Main">
-        <div className="Inner">
-          <h1>Jason Chiang</h1>
-          <p>Self Taught Software Engineer</p>
-          <hr />
-        </div>
-        <div className="TabContainer">
-          <Tabs>
-            <Tabs.Tab label="a">Connect</Tabs.Tab>
-            <Tabs.Tab label="b">Experience</Tabs.Tab>
-            <Tabs.Tab label="c">About Me</Tabs.Tab>
-
+        <Tabs>
+          <div className="Inner">
+            <h1>Jason Chiang</h1>
+            <p>Self Taught Software Engineer</p>
+            <hr />
             <Tabs.Panel label="a">
               <ul className="IconBar">
                 <li>
@@ -41,8 +35,13 @@ const App = () => {
                 </li>
               </ul>
             </Tabs.Panel>
-          </Tabs>
-        </div>
+          </div>
+          <div className="TabLabelContainer">
+            <Tabs.Tab label="a">Connect</Tabs.Tab>
+            <Tabs.Tab label="b">Experience</Tabs.Tab>
+            <Tabs.Tab label="c">About Me</Tabs.Tab>
+          </div>
+        </Tabs>
       </div>
     </div>
   );

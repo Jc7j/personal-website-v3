@@ -15,14 +15,14 @@ interface IconLinkProps {
 const IconLink: React.FC<IconLinkProps> = ({ href, icon }) => {
   return (
     <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
       className="iconLinkContainer"
+      href={href}
+      rel="noopener noreferrer"
+      target="_blank"
     >
+      {icon === 'email' && <MdEmail />}
       {icon === 'github' && <FaGithub />}
       {icon === 'linkedin' && <FaLinkedin />}
-      {icon === 'email' && <MdEmail />}
     </a>
   );
 };
