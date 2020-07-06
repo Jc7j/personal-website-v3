@@ -16,6 +16,7 @@
 
 .Main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -33,4 +34,18 @@
   padding: 3rem 2rem;
   max-width: 100%;
   width: 25rem;
+}
+
+.IconBar {
+  display: flex;
+  margin-top: 20px;
+  padding-inline-start: 0;
+  justify-content: space-around;
+  cursor: default;
+  list-style-type: none;
+}
+
+.TabContainer {
+  display: flex;
+  flex-direction: column-reverse;
 }

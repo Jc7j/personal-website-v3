@@ -1,4 +1,6 @@
 import React from 'react';
+import IconLink from './components/IconLink';
+import { Tabs } from './components/Tabs';
 
 import './App.css';
 
@@ -10,6 +12,36 @@ const App = () => {
           <h1>Jason Chiang</h1>
           <p>Self Taught Software Engineer</p>
           <hr />
+        </div>
+        <div className="TabContainer">
+          <Tabs>
+            <Tabs.Tab label="a">Connect</Tabs.Tab>
+            <Tabs.Tab label="b">Experience</Tabs.Tab>
+            <Tabs.Tab label="c">About Me</Tabs.Tab>
+
+            <Tabs.Panel label="a">
+              <ul className="IconBar">
+                <li>
+                  <IconLink
+                    icon="linkedin"
+                    href="https://www.linkedin.com/in/jasonchiangjc7j/"
+                  />
+                </li>
+                <li>
+                  <IconLink
+                    icon="github"
+                    href="https://github.com/Jc7j"
+                  />
+                </li>
+                <li>
+                  <IconLink
+                    icon="email"
+                    href="mailto:chiangjason19@gmail.com?subject="
+                  />
+                </li>
+              </ul>
+            </Tabs.Panel>
+          </Tabs>
         </div>
       </div>
     </div>
