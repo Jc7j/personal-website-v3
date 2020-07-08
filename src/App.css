@@ -51,6 +51,12 @@
   display: flex;
 }
 
-button {
-  min-width: 110px;
+.TabLabelContainer > div:last-child > button {
+  border-right: none;
+}
+
+.ExperienceTabContainer {
+  text-align: center;
+  /* list-style-type: none; */
+  /* padding-inline-start: 0; */
 }
