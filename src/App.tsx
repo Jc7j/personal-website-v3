@@ -2,7 +2,7 @@ import React from 'react';
 import IconLink from './components/IconLink';
 import { Tabs } from './components/Tabs';
 
-import './App.css';
+import './styles/App.css';
 
 const App = () => {
   return (
@@ -38,21 +38,22 @@ const App = () => {
             <Tabs.Panel label="Experience">
               <ul className="ExperienceTabContainer">
                 <li>
-                  Combat Medic @ Army National Guard Jun 2015 -
-                  Present
+                  <strong>Combat Medic </strong>@ Army National Guard
                 </li>
+                <i>Jun 2015 - Present</i>
                 <li>
-                  Software Developer @ Station Casinos Inc. Aug 2019 -
-                  Mar 2020
+                  <strong>Software Developer</strong> @ Station
+                  Casinos
                 </li>
+                <i>Aug 2019 - Mar 2020</i>
                 <li>
-                  Back-end Software Developer @ Chingu Mar 2019 - May
-                  2019
+                  <strong>Software Developer </strong>@ Chingu
                 </li>
+                <i>Mar 2019 - May 2019</i>
                 <li>
-                  Front-end Software Developer @ Aided Trade Jan 2019
-                  - Mar 2019
+                  <strong>Software Developer </strong>@ Aided Trade
                 </li>
+                <i>Jan 2019 - Mar 2019</i>
               </ul>
             </Tabs.Panel>
             <Tabs.Panel label="About Me">
@@ -62,9 +63,24 @@ const App = () => {
             </Tabs.Panel>
           </div>
           <div className="TabLabelContainer">
-            <Tabs.Tab label="Connect">Connect</Tabs.Tab>
-            <Tabs.Tab label="Experience">Experience</Tabs.Tab>
-            <Tabs.Tab label="About Me">About Me</Tabs.Tab>
+            <Tabs.Tab label="Connect">
+              Connect{' '}
+              <span role="img" aria-label="Hands together">
+                🙌
+              </span>
+            </Tabs.Tab>
+            <Tabs.Tab label="Experience">
+              Experience{' '}
+              <span role="img" aria-label="Boy behind computer">
+                👨‍💻
+              </span>
+            </Tabs.Tab>
+            <Tabs.Tab label="About Me">
+              About Me{' '}
+              <span role="img" aria-label="Emoji with shades">
+                😎
+              </span>
+            </Tabs.Tab>
           </div>
         </Tabs>
       </div>

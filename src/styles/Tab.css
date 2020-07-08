@@ -1,10 +1,12 @@
 .TabButton {
+  cursor: pointer;
   border: none;
   border-right: 1px solid black;
   font-size: 1.2em;
   min-width: 110px;
+  transition: 0.25s ease;
 }
 
 .TabButton:hover {
-  /* color: red; */
+  color: #1e92ff;
 }
