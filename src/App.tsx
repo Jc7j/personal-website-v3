@@ -10,8 +10,9 @@ const App = () => {
       <div className="Main">
         <Tabs>
           <div className="Inner">
+            <h3>Hey, Welcome!</h3>
             <h1>Jason Chiang</h1>
-            <p>Software Developer</p>
+            <p>Software Engineer in Las Vegas</p>
             <hr />
             <Tabs.Panel label="Connect">
               <ul className="IconBar">
@@ -42,8 +43,7 @@ const App = () => {
                 </li>
                 <i>Jun 2015 - Present</i>
                 <li>
-                  <strong>Software Developer</strong> @ Station
-                  Casinos
+                  <strong>Software Engineer</strong> @ Station Casinos
                 </li>
                 <i>Aug 2019 - Mar 2020</i>
                 <li>
@@ -57,9 +57,18 @@ const App = () => {
               </ul>
             </Tabs.Panel>
             <Tabs.Panel label="About Me">
-              Hey there! My name is Jason and I am a self-taught
-              software engineer based in Las Vegas, NV. I decided to
-              pursue my curiosity for building things on the web.
+              My name is Jason and I am a self-taught software
+              engineer based in Las Vegas, NV.
+              <br />
+              <br />
+              I enjoy creating things in React, Node.js in Typescript
+              as well as Django and Django Rest Framework. I'm always
+              learning new things and I'm never afraid to take a
+              challenge!
+              <br />
+              <br />I also have non-coding hobbies such as
+              volunteering on occassion and looking for ways to help
+              my community out.
             </Tabs.Panel>
           </div>
           <div className="TabLabelContainer">
